@@ -1,5 +1,5 @@
 {
-  "name": "@editorjs/image-editor",
+  "name": "@ajite/editorjs-image-editor",
   "version": "1.2.0",
   "keywords": [
     "codex editor",
@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "@editorjs/image": "^2.6.0",
-    "tui-image-editor": "^3.10.0"
+    "tui-image-editor": "^3.10.1"
   }
 }
