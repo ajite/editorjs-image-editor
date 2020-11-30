@@ -1,0 +1,47 @@
+.cdx-comment {
+    position: relative;
+}
+  
+.cdx-comment [contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.cdx-comment [contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-comment [contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-comment::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  position: absolute;
+  margin-top: 12px;
+  left: -30px;
+}
+
+@media all and (max-width: 735px) {
+  .cdx-comment::before {
+    display: none;
+  }
+}
+
+.cdx-comment__comment {
+  margin-bottom: 6px;
+}
+
+#ui-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
